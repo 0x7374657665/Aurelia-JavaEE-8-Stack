@@ -16,8 +16,7 @@ let build = gulp.series(
     processCSS,
     copyFiles
   ),
-  writeBundles,
-  copyToBackend
+  writeBundles
 );
 
 let main;
@@ -28,7 +27,7 @@ if (CLIOptions.taskName() === 'build' && CLIOptions.hasFlag('watch')) {
     (done) => { watch(); done(); }
   );
 } else {
-  main = build;
+  main = CLIOptions.getEnvironment() === 'prod' ? gulp.series(build,copyToBackend) : build;
 }
 
 function readProjectConfiguration() {
