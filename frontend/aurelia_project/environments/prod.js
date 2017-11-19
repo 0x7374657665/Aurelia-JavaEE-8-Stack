@@ -1,5 +1,5 @@
 export default {
   debug: false,
   testing: false,
-  host: 'base/'
+  host: 'api/'
 };
