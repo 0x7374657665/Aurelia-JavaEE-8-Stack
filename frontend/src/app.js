@@ -13,7 +13,9 @@ export class App {
 
   activate() {
     this.client.get('hello').then(data => {
+      console.log('data recieved from backend:', data)
       const payload = JSON.parse(data.response)
+      console.log('payload parsed as: ',payload)
       this.message = payload.message
     })
   }

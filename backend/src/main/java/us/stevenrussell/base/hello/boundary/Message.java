@@ -1,7 +1,6 @@
 package us.stevenrussell.base.hello.boundary;
 
 import javax.json.Json;
-import javax.json.JsonObject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -15,9 +14,10 @@ public class Message {
     @GET
     @Produces(APPLICATION_JSON)
     public Response hello() {
-        JsonObject message = Json.createObjectBuilder()
+        String message = Json.createObjectBuilder()
                 .add("message","Hello from the backend!")
-                .build();
+                .build()
+                .toString();
 
         return Response.ok(message).build();
     }

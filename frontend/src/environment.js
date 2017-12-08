@@ -1,5 +1,5 @@
 export default {
-  debug: false,
-  testing: false,
-  host: 'api/'
+  debug: true,
+  testing: true,
+  host: 'http://localhost:7001/base/api'
 };
