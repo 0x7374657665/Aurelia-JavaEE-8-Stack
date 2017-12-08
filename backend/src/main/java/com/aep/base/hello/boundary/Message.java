@@ -1,4 +1,4 @@
-package us.stevenrussell.base.hello.boundary;
+package com.aep.base.hello.boundary;
 
 import javax.json.Json;
 import javax.ws.rs.GET;

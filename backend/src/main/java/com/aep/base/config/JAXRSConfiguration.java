@@ -1,4 +1,4 @@
-package us.stevenrussell.base.config;
+package com.aep.base.config;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

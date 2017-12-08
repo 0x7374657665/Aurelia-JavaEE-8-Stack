@@ -1,4 +1,4 @@
-package us.stevenrussell.base.filters;
+package com.aep.base.filters;
 
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
