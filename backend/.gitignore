@@ -1,3 +1,14 @@
+# IntelliJ
 .idea
 *.iml
+
+# Maven
 target
+
+# Netbeans
+nbproject
+build
+nbbuild
+dist
+nbdist
+.nb-gradle
