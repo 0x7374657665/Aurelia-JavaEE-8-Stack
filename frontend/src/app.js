@@ -1,18 +1,13 @@
-import environment from './environment'
-import {HttpClient} from 'aurelia-http-client'
+import {client} from './models/aurelia-http-client-preconfigured'
 
 export class App {
 
   constructor() {
-    this.client = new HttpClient().configure( conf => {
-      conf.withBaseUrl(environment.host)
-    })
-
     this.message = 'Loading...'
   }
 
   activate() {
-    this.client.get('hello').then(data => {
+    client.get('hello').then(data => {
       const payload = JSON.parse(data.response)
       this.message = payload.message
     })

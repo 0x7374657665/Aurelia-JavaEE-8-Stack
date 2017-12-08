@@ -1,0 +1,10 @@
+<template>
+    <require from="./login.css"></require>
+    <form submit.trigger="login()">
+        <fieldset>
+            <input type="text" placeholder="username" value.bind="username"><br>
+            <input type="password" placeholder="password" value.bind="password"><br>
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+</template>
