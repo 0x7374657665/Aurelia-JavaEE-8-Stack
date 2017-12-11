@@ -1,10 +1,9 @@
 <template>
-    <require from="./login.css"></require>
-    <form submit.trigger="login()">
-        <fieldset>
-            <input type="text" placeholder="username" value.bind="username"><br>
-            <input type="password" placeholder="password" value.bind="password"><br>
-            <button type="submit">Login</button>
-        </fieldset>
-    </form>
+    <div class="container">
+        <form submit.trigger="login()" class="form-signin">
+            <input type="text" placeholder="username" value.bind="username" class="form-control" required autofocus>
+            <input type="password" placeholder="password" value.bind="password" class="form-control" required>
+            <button type="submit" class="btn btn-sm btn-primary btn-block"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</button>
+        </form>
+    </div>
 </template>

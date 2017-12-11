@@ -9,4 +9,11 @@
             30
         </session-timeout>
     </session-config>
+    
+    <security-role>
+        <role-name>Admin</role-name>
+    </security-role>
+    <security-role>
+        <role-name>User</role-name>
+    </security-role>
 </web-app>

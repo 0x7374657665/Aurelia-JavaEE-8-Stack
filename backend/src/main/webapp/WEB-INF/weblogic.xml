@@ -4,11 +4,15 @@
     <keepgenerated>true</keepgenerated>
     <debug>true</debug>
   </jsp-descriptor>
+  
   <context-root>/base</context-root>
+  
   <library-ref>
     <library-name>jax-rs</library-name>
     <specification-version>2.0</specification-version>
     <implementation-version>2.1</implementation-version>
     <exact-match>false</exact-match>
   </library-ref>
+  
+  
 </weblogic-web-app>

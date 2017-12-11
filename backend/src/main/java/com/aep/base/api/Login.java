@@ -1,6 +1,5 @@
-package com.aep.base.login.boundary;
+package com.aep.base.api;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 import java.util.Map;
 import java.util.logging.Logger;
 import javax.ws.rs.Consumes;
